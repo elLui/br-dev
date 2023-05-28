@@ -2,9 +2,7 @@ import generateUniqueId from "@/utils/generateUniqueId";
 import Image from "next/image";
 
 
-
-
-type NavItem = {
+export type NavItem = {
     id: string;
     label: string;
     link: string;
@@ -16,40 +14,38 @@ export const nav_data :NavItem[] = [
 
     {
         id: generateUniqueId(),
-        label: "home",
-        link: "/",
-        isActive: true,
-        icon: <Image src={"/svg/icons/home.svg"} width={24} height={24} alt={"home"}/>,
-
-    },
-
-    {
-        id: generateUniqueId(),
-        label: "about",
+        label: "BAND",
         link: "/about",
         isActive: false,
-        icon: <Image src={"/svg/icons/user.svg"} width={24} height={24} alt={"about"}/>,
+        icon: <Image src={"/svg/icons/user.svg"} width={24} height={24} alt={"band-icon"}/>,
 
     }, {
         id: generateUniqueId(),
-        label: "contact",
+        label: "CONTACT",
         link: "/about/contact",
         isActive: false,
-        icon: <Image src={"/svg/icons/info.svg"} width={24} height={24} alt={"contact"}/>,
+        icon: <Image src={"/svg/icons/info.svg"} width={24} height={24} alt={"contact-icon"}/>,
 
     }, {
         id: generateUniqueId(),
-        label: "projects",
+        label: "MUSIC",
         link: "/projects",
         isActive: false,
-        icon: <Image src={"/svg/icons/table.svg"} width={24} height={24} alt={"projects"}/>,
+        icon: <Image src={"/svg/icons/table.svg"} width={24} height={24} alt={"projects-icon"}/>,
 
     }, {
         id: generateUniqueId(),
-        label: "blog",
+        label: "GIGS",
         link: "/blog",
         isActive: false,
         icon: <Image src={"/svg/icons/book-open.svg"} width={24} height={24} alt={"blog"}/>,
+
+    },     {
+        id: generateUniqueId(),
+        label: "HOME",
+        link: "/",
+        isActive: true,
+        icon: <Image src={"/svg/icons/home.svg"} width={24} height={24} alt={"home"}/>,
 
     },
 
