@@ -5,10 +5,13 @@ import NavButton from "@/components/navbar/button/NavButton";
 
 const Header001 = () => {
     return (
-        <header className="flex top-0  items-center justify-around w-screen bg-blue-500">
+        <header className="sticky top-0">
+            <div className="flex  items-center justify-around w-screen bg-gradient-to-b from-accented-dark-red to-85% to-transparent">
+
             <BrLogo />
             <Nav001 />
             <NavButton />
+            </div>
         </header>
     )
 }
