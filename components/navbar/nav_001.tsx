@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 
 const Nav001 = () => {
@@ -10,7 +11,7 @@ const Nav001 = () => {
 
 
     return (
-        <div>Nav001</div>
+        <div className="hidden md:flex">Nav001</div>
     )
 }
 export default Nav001
