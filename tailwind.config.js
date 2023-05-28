@@ -7,6 +7,13 @@ module.exports = {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
                 'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
             },
+            colors: {
+                'flannel-red': '#C33C23',
+                'dark-grey': '#2D2D2D',
+                'flannel-grey': '#8D8F94',
+                'off-white': '#F5F5F5',
+                'accented-dark-red': '#7B1F1A',
+            },
 
             fontFamily: {
 
