@@ -26,7 +26,7 @@ const BrLogo: React.FC = () => {
 
     return (
         <Link href={"/"} passHref>
-            <motion.div className="flex object-fill" animate={controls}>
+            <motion.div layout className="flex object-fill" animate={controls}>
                 <Image src={"/svg/logo/br-logo.svg"} alt={"bitter Route Logo"} className={"bg-transparent"} width={200} height={200} />
             </motion.div>
         </Link>
