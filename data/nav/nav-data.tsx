@@ -10,7 +10,7 @@ export type NavItem = {
     icon: JSX.Element;
 };
 
-export const nav_data :NavItem[] = [
+export const nav_data: NavItem[] = [
 
     {
         id: generateUniqueId(),
@@ -38,17 +38,13 @@ export const nav_data :NavItem[] = [
         label: "GIGS",
         link: "/blog",
         isActive: false,
-        icon: <Image src={"/svg/icons/book-open.svg"} width={24} height={24} alt={"blog-icon"}/>,
+        icon: <Image src={"/svg/icons/rock-hand-gigs.svg"} width={24} height={24} alt={"blog-icon"}/>,
 
-    },     {
+    }, {
         id: generateUniqueId(),
         label: "HOME",
         link: "/",
         isActive: true,
-        icon: <Image src={"/svg/icons/home.svg"} width={24} height={24} alt={"home-icon"}/>,
-
+        icon: <Image src={"/svg/icons/rock-hand-home.svg"} width={24} height={24} alt={"home-icon"}/>,
     },
-
-
 ]
-
