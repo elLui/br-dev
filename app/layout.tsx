@@ -1,4 +1,4 @@
-import './globals.css'
+import "@/styles/globals.css";
 import Header001 from "@/components/header/header_001";
 
 

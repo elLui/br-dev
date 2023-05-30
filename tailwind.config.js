@@ -21,6 +21,7 @@ module.exports = {
             backgroundImage: {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
                 'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+                'video-background': 'url("/video/AdobeStock_122654532_20s_loop_static_effect.mp4")',
             },
             colors: {
                 'flannel-red': '#C33C23',
