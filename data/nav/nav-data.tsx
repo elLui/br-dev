@@ -38,14 +38,14 @@ export const nav_data :NavItem[] = [
         label: "GIGS",
         link: "/blog",
         isActive: false,
-        icon: <Image src={"/svg/icons/book-open.svg"} width={24} height={24} alt={"blog"}/>,
+        icon: <Image src={"/svg/icons/book-open.svg"} width={24} height={24} alt={"blog-icon"}/>,
 
     },     {
         id: generateUniqueId(),
         label: "HOME",
         link: "/",
         isActive: true,
-        icon: <Image src={"/svg/icons/home.svg"} width={24} height={24} alt={"home"}/>,
+        icon: <Image src={"/svg/icons/home.svg"} width={24} height={24} alt={"home-icon"}/>,
 
     },
 
