@@ -52,8 +52,8 @@ const Nav_002_hui = () => {
                 {nav_data.map((item: NavItem) => (
                     <Link key={item.id} href={item.link}
                           className={clsx({"active": item.isActive}, "grid grid-cols-1 gap-4 mt-4")}>
-                        <div className="place-self-center">
-                            {item.icon}
+                        <div className="place-self-center bg-amber-200">
+                            {item.isActive ? item.activeIcon : item.icon}
                         </div>
                         <div className="place-self-center">
                             {item.label}
@@ -68,7 +68,7 @@ const Nav_002_hui = () => {
             <nav role="navigation" className="hidden md:flex w-1/2 flex-wrap justify-self-end">
                 {nav_data.map((item: NavItem) => (
                     <Link key={item.id} href={item.link} className={clsx({"active": item.isActive}, "ml-6 mt-8")}>
-                        {item.icon}
+                        {item.isActive ? item.activeIcon : item.icon}
                         {item.label}
                     </Link>))}
             </nav>
