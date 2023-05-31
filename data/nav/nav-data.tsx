@@ -1,5 +1,13 @@
 import generateUniqueId from "@/utils/generateUniqueId";
-import Image from "next/image";
+import {
+    GiAlienBug,
+    GiAlienEgg,
+    GiMeepleGroup,
+    GiMicrophone,
+    GiMusicalNotes,
+    GiMusicSpell,
+    GiRock,
+} from "react-icons/gi";
 
 
 export type NavItem = {
@@ -17,40 +25,28 @@ export const nav_data: NavItem[] = [{
     label: "BAND",
     link: "/band",
     isActive: false,
-    icon: <Image src={"/svg/icons/user.svg"} width={24} height={24} alt={"band-icon"}/>,
-    activeIcon: <Image src={"/svg/icons/user.svg"} width={24} height={24} alt={"band-icon-active"}/>,
-
+    icon: <GiMeepleGroup/>,
+    activeIcon: <GiMeepleGroup/>,
 }, {
     id: generateUniqueId(),
     label: "CONTACT",
     link: "/contact",
     isActive: false,
-    icon: <Image src={"/svg/icons/fist-hand-contact.svg"} width={24} height={24} alt={"contact-icon"}/>,
-    activeIcon: <Image src={"/svg/icons/fist-hand-contact-active.svg"} width={24} height={24} alt={"contact-icon-active"}/>,
-
+    icon: <GiAlienBug/>,
+    activeIcon: <GiAlienEgg/>,
 }, {
     id: generateUniqueId(),
     label: "MUSIC",
     link: "/music",
     isActive: false,
-    icon: <Image src={"/svg/icons/record-hand-music.svg"} width={24} height={24} alt={"music-icon"}/>,
-    activeIcon: <Image src={"/svg/icons/record-hand-music-active.svg"} width={24} height={24} alt={"music-icon-active"}/>,
-
-
+    icon: <GiMusicSpell/>,
+    activeIcon: <GiMusicalNotes/>,
 }, {
     id: generateUniqueId(),
     label: "SHOWS",
     link: "/shows",
     isActive: false,
-    icon: <Image src={"/svg/icons/humic-body-show.svg"} width={24} height={24} alt={"shows-icon"}/>,
-    activeIcon: <Image src={"/svg/icons/humic-body-show-active.svg"} width={24} height={24} alt={"shows-icon-active"}/>,
-
-
-}, {
-    id: generateUniqueId(),
-    label: "HOME",
-    link: "/",
-    isActive: true,
-    icon: <Image src={"/svg/icons/rock-hand-home.svg"} width={24} height={24} alt={"home-icon"}/>,
-    activeIcon: <Image src={"/svg/icons/rock-hand-home-active.svg"} width={24} height={24} alt={"home-icon-active"}/>,
-},]
+    icon: <GiMicrophone/>,
+    activeIcon: <GiRock/>,
+},
+]
