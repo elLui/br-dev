@@ -15,7 +15,7 @@ export type NavItem = {
 export const nav_data: NavItem[] = [{
     id: generateUniqueId(),
     label: "BAND",
-    link: "/about",
+    link: "/band",
     isActive: false,
     icon: <Image src={"/svg/icons/user.svg"} width={24} height={24} alt={"band-icon"}/>,
     activeIcon: <Image src={"/svg/icons/user.svg"} width={24} height={24} alt={"band-icon-active"}/>,
@@ -23,7 +23,7 @@ export const nav_data: NavItem[] = [{
 }, {
     id: generateUniqueId(),
     label: "CONTACT",
-    link: "/about/contact",
+    link: "/contact",
     isActive: false,
     icon: <Image src={"/svg/icons/fist-hand-contact.svg"} width={24} height={24} alt={"contact-icon"}/>,
     activeIcon: <Image src={"/svg/icons/fist-hand-contact-active.svg"} width={24} height={24} alt={"contact-icon-active"}/>,
@@ -31,7 +31,7 @@ export const nav_data: NavItem[] = [{
 }, {
     id: generateUniqueId(),
     label: "MUSIC",
-    link: "/projects",
+    link: "/music",
     isActive: false,
     icon: <Image src={"/svg/icons/record-hand-music.svg"} width={24} height={24} alt={"music-icon"}/>,
     activeIcon: <Image src={"/svg/icons/record-hand-music-active.svg"} width={24} height={24} alt={"music-icon-active"}/>,
