@@ -2,7 +2,7 @@ import React from 'react'
 
 const Band = () => {
     return (
-        <div>Band</div>
+        <div className="grid">Band</div>
     )
 }
 export default Band
