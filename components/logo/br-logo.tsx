@@ -48,7 +48,9 @@ const BrLogo: React.FC = () => {
                     />
                 </div>
             </motion.div>
-        </Link>)
+        </Link>
+
+    )
 }
 
 export default BrLogo;
