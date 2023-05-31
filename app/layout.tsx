@@ -1,5 +1,5 @@
-import './globals.css'
-import Header001 from "@/components/header/header_001";
+import '../styles/globals.css'
+import Header002Hui from "@/components/header/header002_hui";
 
 
 export const metadata = {
@@ -16,8 +16,13 @@ export default function RootLayout({
         <html lang="en"
         className="scroll-smooth antialiased">
         {/*min-h-screen for the body. This ensures that the body takes at least the full height of the viewport, but can grow taller if the content requires it*/}
-        <body className="font-graffiti min-h-screen bg-gradient-to-tr from-accented-dark-red to-flannel-red">
-        <Header001/>
+        <body className="font-graffiti min-h-screen max-w-screen bg-gradient-to-tr from-accented-dark-red to-flannel-red overflow-x-hidden">
+
+        <div className="main">
+            <div className="gradient"/>
+        </div>
+
+        <Header002Hui/>
         {children}
         </body>
         </html>
